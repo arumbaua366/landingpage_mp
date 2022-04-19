@@ -5,6 +5,11 @@ body {
     margin: 0;
 }
 
+.container {
+   box-sizing: border-box;
+   padding: 10px 0px 10px 0px;
+}
+
 h1, 
 h3, 
 p, 
@@ -12,15 +17,91 @@ blockquote {
     margin: 0;
 }
 
+.hero,
+.boxes,
+.actionmain,
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.hero {
+    padding: 50px 90px;
+}
+
+.top {
+    padding: 0px 90px 0px 90px; 
+}
+
+.info {
+    padding: 25px 100px 25px 100px;
+}
+
+.hero {
+    gap: 8px;
+}
+
+img {
+        height: auto;
+        width: 100%;
+}
+
+ul {
+    list-style-type: none;   
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.link {
+    float: right;
+}
+
+.link a {
+    display: inline-block;
+    /* text-align: right; */
+    padding: 16px;
+    text-decoration: none;
+    color: #f9faf3;
+}
+
 button,
 .actionbox {
     background-color: #3882f6;
 }
 
-.logo {
-    font-size: 24px;
-    color: #f9faf3;
+.signupOne,
+.signupTwo {
+    color: #f9faf8;
+    border-radius: 5px;
+    padding: 5px 25px;
 }
+
+.signupOne {
+    border: 1px solid #3882f6;
+    margin: 15px 0;
+}
+
+.signupTwo {
+    border: 1px solid #f9faf8;
+    margin: 15px 0;
+}
+
+.logo {
+    float: left;
+}
+
+.logo a {
+    display: inline-block;
+    text-align: left;
+    padding: 16px;
+    text-decoration: none;
+    color: #f9faf3;
+    font-size: 24px;
+}
+
 
 .hero-text h1 {
     font-size: 48px;
@@ -28,6 +109,8 @@ button,
     color: #f9faf8;
 }
 
+.actionbox,
+.footer,
 .hero-text p {
     font-size: 18px;
     color: #e5e7eb;
@@ -42,10 +125,27 @@ button,
     font-size: 36px;
     font-weight: 800;
     color: #1f2937;
+    text-align: center;
+    padding: 40px;
+}
+
+.infobox p {
+    padding: 10px 0 60px 0;
+    text-align: center;
+    width: 140px;
+}
+
+.infobox div {
+    margin-top: 20px;
+    background: #f9faf8;
+    border: 4px solid #3882f6;
+    border-radius: 20px;
+    height: 125px;
+    width: 125px;
 }
 
 .quote {
-    background-color: #e5e7eb
+    background-color: #e5e7eb;
 }
 
 blockquote {
@@ -53,9 +153,35 @@ blockquote {
     color: #1f2937;
     font-style: italic;
     font-weight: 300;
+    padding: 150px;
 }
 
 .quote p {
     font-size: 18px;
     font-weight: bold;
+    padding: 0 100px;
+    text-align: end;
+}
+
+.actionbox {
+    padding: 30px 175px;
+    margin: 50px;
+    border-radius: 5px;
+}
+
+.footer {
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    h1,
+    .blockquote {
+        font-size: 3vw;
+    }
+    h3 {
+        font-size: 3vw;
+    }
+    p {
+        font-size: 3vw;
+    }
 }
